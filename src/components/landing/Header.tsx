@@ -23,11 +23,11 @@ const Header = () => {
             <a href="#features" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
               Features
             </a>
+            <a href="#ai-features" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              AI Features
+            </a>
             <a href="#demo" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
               Live Demo
-            </a>
-            <a href="#api-guide" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              API Guide
             </a>
           </nav>
 
@@ -68,11 +68,11 @@ const Header = () => {
               <a href="#features" className="text-sm text-muted-foreground hover:text-foreground">
                 Features
               </a>
+              <a href="#ai-features" className="text-sm text-muted-foreground hover:text-foreground">
+                AI Features
+              </a>
               <a href="#demo" className="text-sm text-muted-foreground hover:text-foreground">
                 Live Demo
-              </a>
-              <a href="#api-guide" className="text-sm text-muted-foreground hover:text-foreground">
-                API Guide
               </a>
               <div className="flex gap-4 pt-4">
                 <Link to="/login">
