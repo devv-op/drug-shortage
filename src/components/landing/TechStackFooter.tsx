@@ -6,7 +6,7 @@ const backendTech = ['Django 4', 'Django REST Framework', 'JWT Auth', 'PostgreSQ
 
 const TechStackFooter = () => {
   return (
-    <footer className="py-16 bg-secondary text-secondary-foreground">
+    <footer className="py-16 bg-background dark:bg-secondary text-foreground dark:text-secondary-foreground border-t border-border">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           {/* Brand */}
@@ -17,7 +17,7 @@ const TechStackFooter = () => {
               </div>
               <span className="font-semibold text-lg">MedPredict</span>
             </div>
-            <p className="text-secondary-foreground/80 text-sm leading-relaxed">
+            <p className="text-muted-foreground text-sm leading-relaxed">
               Hospital Drug Shortage Prediction & Inventory Monitoring System. 
               Built for healthcare professionals who need reliable supply chain insights.
             </p>
@@ -25,10 +25,10 @@ const TechStackFooter = () => {
 
           {/* Frontend Stack */}
           <div>
-            <h3 className="font-semibold mb-4">Frontend Stack</h3>
+            <h3 className="font-semibold mb-4 text-foreground dark:text-secondary-foreground">Frontend Stack</h3>
             <div className="flex flex-wrap gap-2">
               {frontendTech.map((tech) => (
-                <Badge key={tech} variant="outline" className="border-secondary-foreground/30 text-secondary-foreground/80">
+                <Badge key={tech} variant="outline" className="border-border text-muted-foreground">
                   {tech}
                 </Badge>
               ))}
@@ -37,10 +37,10 @@ const TechStackFooter = () => {
 
           {/* Backend Stack */}
           <div>
-            <h3 className="font-semibold mb-4">Backend Stack</h3>
+            <h3 className="font-semibold mb-4 text-foreground dark:text-secondary-foreground">Backend Stack</h3>
             <div className="flex flex-wrap gap-2">
               {backendTech.map((tech) => (
-                <Badge key={tech} variant="outline" className="border-secondary-foreground/30 text-secondary-foreground/80">
+                <Badge key={tech} variant="outline" className="border-border text-muted-foreground">
                   {tech}
                 </Badge>
               ))}
@@ -48,15 +48,15 @@ const TechStackFooter = () => {
           </div>
         </div>
 
-        <div className="border-t border-secondary-foreground/20 pt-8">
+        <div className="border-t border-border pt-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-sm text-secondary-foreground/60">
+            <p className="text-sm text-muted-foreground">
               © 2024 MedPredict. Built for healthcare innovation hackathon.
             </p>
-            <div className="flex gap-6 text-sm text-secondary-foreground/60">
-              <a href="#features" className="hover:text-secondary-foreground transition-colors">Features</a>
-              <a href="#api" className="hover:text-secondary-foreground transition-colors">API Docs</a>
-              <a href="#architecture" className="hover:text-secondary-foreground transition-colors">Architecture</a>
+            <div className="flex gap-6 text-sm text-muted-foreground">
+              <a href="#features" className="hover:text-foreground transition-colors">Features</a>
+              <a href="#ai-features" className="hover:text-foreground transition-colors">AI Features</a>
+              <a href="#demo" className="hover:text-foreground transition-colors">Demo</a>
             </div>
           </div>
         </div>
